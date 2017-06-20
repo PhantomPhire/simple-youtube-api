@@ -237,5 +237,6 @@ class YouTube {
 YouTube.Video = Video;
 YouTube.Playlist = Playlist;
 YouTube.Channel = Channel;
+YouTube.YouTube = YouTube;
 
 module.exports = YouTube;
