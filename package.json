@@ -1,25 +1,36 @@
 {
   "name": "simple-youtube-api",
-  "version": "2.1.0",
+  "version": "5.1.1",
   "description": "A module to simplify the YouTube API.",
-  "main": "index.js",
+  "sideEffects": false,
+  "main": "src/index.js",
+  "unpkg": "dist/sya.min.js",
   "scripts": {
-    "docs": "jsdoc -c jsdoc.json"
+    "docs": "jsdoc -c jsdoc.json",
+    "test": "mocha",
+    "build": "webpack"
   },
   "dependencies": {
-    "request": "^2.75.0",
-    "request-promise-native": "^1.0.0",
-    "iso8601-duration": "^1.0.0"
+    "iso8601-duration": "^1.0.0",
+    "node-fetch": "^2.2.1"
   },
   "devDependencies": {
+    "dotenv": "^4.0.0",
     "jsdoc": "^3.4.0",
-    "minami": "^1.1.0"
+    "lodash.defaultsdeep": "^4.6.0",
+    "minami": "^1.1.0",
+    "mocha": "^3.5.3",
+    "webpack": "^4.25.1",
+    "webpack-cli": "^3.1.2"
   },
   "repository": {
     "type": "git",
     "url": "https://github.com/HyperCoder2975/simple-youtube-api.git"
   },
   "author": "Hyper-Coder",
+  "maintainers": [
+    "Will Nelson <will@pleb.xyz>"
+  ],
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/HyperCoder2975/simple-youtube-api/issues"
